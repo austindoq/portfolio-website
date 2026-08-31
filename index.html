@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Austin Doquiatan</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="index.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
@@ -25,9 +24,18 @@
       href="/icons/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
-    <nav id="nav"></nav>
+  <body class="font-archivo">
+    <nav id="nav" class="flex">
+      <h1 class="font-extrabold text-3xl">Austin Doquiatan</h1>
+    </nav>
     <main id="hero"></main>
     <footer id="footer"></footer>
   </body>
