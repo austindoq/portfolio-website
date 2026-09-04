@@ -32,37 +32,55 @@
     />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="font-archivo flex flex-col min-h-screen">
-    <nav id="nav" class="flex p-4 bg-linear-to-b from-[#cccaca] from-1% to-[#252525] to-10%">
+  <body class="font-archivo flex flex-col min-h-screen bg-cover bg-center bg-[url('../images/background-1.2.jpg')]">
+    <nav id="nav" class="flex items-center justify-between py-4 px-8 bg-[#252525]">
       <h1
         class="font-extrabold text-4xl text-[#cccaca] w-full text-center tracking-wide"
-      >
-        Austin Doquiatan
+      >My Portfolio! 👻
       </h1>
+      <div id="socials" class="flex gap-4">
+        <a href="https://github.com/austindoq" class="hover:cursor-pointer ease-in-out hover:scale-105 duration-150">
+          <img src="./icons/github-light.svg" class="h-12 w-12">
+        </a>
+        <a href="https://www.linkedin.com/in/austin-doquiatan-1351a2177/" class="hover:cursor-pointer ease-in-out hover:scale-105 duration-150">
+          <img src="./icons/linkedin-light.SVG" class="h-12 w-12"> 
+        </a>
+      </div>
     </nav>
     <main
       id="hero"
-      class="bg-[#d3d0d0] flex flex-col md:flex-row gap-4 justify-between flex-1 w-full p-4"
+      class="flex flex-col md:flex-row gap-4 justify-between flex-1 w-full p-8"
     >
       <aside
-        id="project-info-container"
-        class="basis-[30%] border"
+        id="personal-info-container"
+        class="basis-[40%] border-2 border-[#252525] flex flex-col rounded-lg bg-radial-[at_50%_25%] from-[#918f8f] from-15% to-[#6e6e6e] p-8 shadow-xl"
       >
       
+        <div id="portrait" class="w-full flex justify-center mb-4">
+          <img src="./images/mugshot_square.jpg" class="object-cover shadow-xl border-2 border-[#252525] rounded-full w-[70%]">
+        </div>
+
+        <div id="autobio" class="w-full flex flex-col gap-4 text-2xl">
+          <h1 id="name" class="text-5xl underline decoration-[#521214]">Austin Doquiatan</h1>
+          <span id="location">Location: <span class="text-[#521214]">Vancouver, BC</span></span>
+          <div id="delineator" class="h-0.5 bg-linear-to-r w-full from-transparent from-2% via-[#252525] to-transparent to-98%"></div>
+          <p class="tracking-wide">Hey there, I'm Austin! I got into software development to understand the world around me at a deeper level. Originally coming from a trades background, I decided that learning about technology and how it works will only benefit myself and those around me in a world that gets more digital by the day. Since learning the ropes of software development I've been able to apply what I know to help friends and look at the world through a different lens.<br><br> When I'm not working on a project you can most likely find me skateboarding, playing music, or simply taking in life.  </p>
+        </div>
+
       </aside>
       <section
         id="project-select-container"
-        class="basis-[70%] border flex flex-col gap-8 items-center py-8 text-2xl"
+        class="basis-[60%] flex flex-col gap-8 items-center text-2xl"
       >
-        <div id="aside-header">
-        <h1 class="underline text-4xl">Recent Projects</h1>
-      </div>
-      <div id="project-selection" class="flex flex-col gap-12">
-        <div id="project-2" class="border-3 flex flex-col gap-1 rounded-md border-[#521214]">
+        <div id="aside-header" class="w-full py-4 shadow-xl rounded-lg bg-[#252525] text-[#cccaca]">
+          <h1 class="w-full text-center text-4xl">Recent Projects</h1>
+        </div>
+      <div id="project-selection" class="flex flex-col gap-8">
+        <div id="project-2" class="border-3 flex flex-col rounded-md border-[#521214] shadow-xl ease-in-out hover:scale-101 duration-150">
           <a target="_blank" href="https://github.com/austindoq/employdar" class="hover:cursor-pointer">
             <img src="./images/test-img-2.png" class="object-cover w-full hover:brightness-100 brightness-70">
           </a>
-          <div id="project-text-area" class="p-2 flex flex-col gap-2">
+          <div id="project-text-area" class="p-2 flex flex-col gap-2 bg-[#cccaca]">
             <div id="project-headers" class="flex items-center gap-2">
               <span id="project-title" class="tracking-wide text-3xl">Employdar</span>
               <span id="partition" class="text-[#521214]"> | </span>
@@ -83,15 +101,15 @@
             </span>
           </div>
         </div>
-        <div id="project-1" class="border-3 flex flex-col gap-1 rounded-md border-[#521214]">
+        <div id="project-1" class="border-3 flex flex-col rounded-md border-[#521214] shadow-xl ease-in-out hover:scale-101 duration-150">
           <a target="_blank" href="https://github.com/austindoq/anteautopro" class="hover:cursor-pointer">
             <img src="./images/test-img.png" class="object-cover w-full hover:brightness-100 brightness-70">
           </a>
-          <div id="project-text-area" class="p-2 flex flex-col gap-2">
+          <div id="project-text-area" class="p-2 flex flex-col gap-2 bg-[#cccaca]">
             <div id="project-headers" class="flex items-center gap-2">
               <span id="project-title" class="tracking-wide text-3xl">Anteautopro.ca</span>
               <span id="partition" class="text-[#521214]"> | </span>
-              <span id="project-oneline" class="text-sm">A bespoke mobile responsive web application and client portal for Ante Thompson; a Vancouver based automotive sales person.</span>
+              <span id="project-oneline" class="text-sm">A bespoke mobile-responsive web application and client portal for Ante Thompson; a Vancouver based automotive sales person.</span>
             </div>
             <span id="project-details-container" class="border-t">
               <div id="project-details" class="flex w-full gap-2 items-center mt-2">
@@ -122,7 +140,8 @@
 </html>
 
 <!-- 
-#452829 ACCENTS
+#521214 ACCENTS
 #252525 SECONDARY/TEXT
-#d3d0d0 BODY BG
+#cccaca BODY BG
+
 --
