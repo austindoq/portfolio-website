@@ -33,47 +33,96 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="font-archivo flex flex-col min-h-screen">
-    <nav id="nav" class="flex p-4 bg-[#434446]">
+    <nav id="nav" class="flex p-4 bg-linear-to-b from-[#cccaca] from-1% to-[#252525] to-10%">
       <h1
-        class="font-extrabold text-4xl text-[#eae3e3] w-full text-center tracking-wide"
+        class="font-extrabold text-4xl text-[#cccaca] w-full text-center tracking-wide"
       >
         Austin Doquiatan
       </h1>
     </nav>
     <main
       id="hero"
-      class="bg-[#6a3e40] flex gap-4 justify-between flex-1 w-full p-4"
+      class="bg-[#d3d0d0] flex flex-col md:flex-row gap-4 justify-between flex-1 w-full p-4"
     >
       <aside
-        id="project-select-container"
-        class="basis-[30%] flex flex-col gap-8 items-center border py-8 text-xl"
+        id="project-info-container"
+        class="basis-[30%] border"
       >
-      <div id="aside-header">
-        <h1 class="underline">Recent Projects</h1>
-      </div>
-      <div id="project-selection" class="flex flex-col gap-4">
-        <div id="project-1">
-          <img src="./images/test-img.png" class="object-cover rounded-md hover:brightness-100 brightness-70">
-        </div>
-        <div id="project-2">
-          <img src="./images/test-img-2.png" class="object-cover rounded-md hover:brightness-100 brightness-70">
-        </div>
-      </div>
+      
       </aside>
       <section
-        id="content-area-container"
-        class="basis-[70%] border p-8"
+        id="project-select-container"
+        class="basis-[70%] border flex flex-col gap-8 items-center py-8 text-2xl"
       >
-        <h1>HAHADAW</h1>
+        <div id="aside-header">
+        <h1 class="underline text-4xl">Recent Projects</h1>
+      </div>
+      <div id="project-selection" class="flex flex-col gap-12">
+        <div id="project-2" class="border-3 flex flex-col gap-1 rounded-md border-[#521214]">
+          <a target="_blank" href="https://github.com/austindoq/employdar" class="hover:cursor-pointer">
+            <img src="./images/test-img-2.png" class="object-cover w-full hover:brightness-100 brightness-70">
+          </a>
+          <div id="project-text-area" class="p-2 flex flex-col gap-2">
+            <div id="project-headers" class="flex items-center gap-2">
+              <span id="project-title" class="tracking-wide text-3xl">Employdar</span>
+              <span id="partition" class="text-[#521214]"> | </span>
+              <span id="project-oneline" class="text-sm">Custom local MCP server that allows addition, updating, and natural language reasoning of job application data within a connected MongoDB collection as part of a multi-tool agentic workflow.</span>
+            </div>
+            <span id="project-details-container" class="border-t">
+              <div id="project-details" class="flex w-full gap-2 items-center mt-2">
+                <div id="framework-icons-header">
+                  <h1 class="text-md">Built with:</h1>
+                </div>
+                <div id="framework-icons" class="flex gap-2 items-center justify-evenly flex-1">
+                  <img src="./icons/mcp.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/claude.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/mongodb.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/python.svg" class="h-10 w-10 border p-1 rounded-full">
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div id="project-1" class="border-3 flex flex-col gap-1 rounded-md border-[#521214]">
+          <a target="_blank" href="https://github.com/austindoq/anteautopro" class="hover:cursor-pointer">
+            <img src="./images/test-img.png" class="object-cover w-full hover:brightness-100 brightness-70">
+          </a>
+          <div id="project-text-area" class="p-2 flex flex-col gap-2">
+            <div id="project-headers" class="flex items-center gap-2">
+              <span id="project-title" class="tracking-wide text-3xl">Anteautopro.ca</span>
+              <span id="partition" class="text-[#521214]"> | </span>
+              <span id="project-oneline" class="text-sm">A bespoke mobile responsive web application and client portal for Ante Thompson; a Vancouver based automotive sales person.</span>
+            </div>
+            <span id="project-details-container" class="border-t">
+              <div id="project-details" class="flex w-full gap-2 items-center mt-2">
+                <div id="framework-icons-header">
+                  <h1 class="text-md">Built with:</h1>
+                </div>
+                <div id="framework-icons" class="flex gap-2 items-center justify-evenly flex-1">
+                  <img src="./icons/html5.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/css.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/javascript.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/nodejs.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/express.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/mongodb.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/mongoose.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/cloudinary.svg" class="h-10 w-10 border p-1 rounded-full">
+                  <img src="./icons/resend.svg" class="h-10 w-10 border p-1 rounded-full">
+                  
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
       </section>
     </main>
-    <footer id="footer" class="p-2 bg-[#57595B]"></footer>
+    <footer id="footer" class="p-2 bg-[#252525]"></footer>
   </body>
 </html>
 
 <!-- 
-#452829
-#57595B
-#E8D1C5
-#F3E8DF 
+#452829 ACCENTS
+#252525 SECONDARY/TEXT
+#d3d0d0 BODY BG
 --
