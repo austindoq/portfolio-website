@@ -1,5 +1,6 @@
 @import "tailwindcss";
-
+/* TAILWIND CLI COMMAND */
+/* npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch */
 @theme {
   --font-archivo: "Archivo Black";
 }
@@ -104,6 +105,3 @@
     transform: rotate(3deg);
   }
 }
-
-/* TAILWIND CLI COMMAND */
-/* npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch */
