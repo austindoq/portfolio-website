@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="font-archivo flex flex-col min-h-screen bg-cover bg-center bg-[url('../images/background-1.2.jpg')]">
-    <nav id="nav" class="flex items-center justify-between py-4 px-8 bg-[#252525]">
+    <nav id="nav" class="flex flex-col md:flex-row items-center justify-between py-4 px-8 bg-[#252525]">
       <h1 class="ransom" aria-label="My Portfolio">
         <span class="l1" aria-hidden="true">M</span><span class="l2" aria-hidden="true">y</span><span class="gap" aria-hidden="true"> </span><span class="l3" aria-hidden="true">P</span><span class="l4" aria-hidden="true">o</span><span class="l5" aria-hidden="true">r</span><span class="l6" aria-hidden="true">t</span><span class="l7" aria-hidden="true">f</span><span class="l8" aria-hidden="true">o</span><span class="l9" aria-hidden="true">l</span><span class="l10" aria-hidden="true">i</span><span class="l11" aria-hidden="true">o</span>
       </h1>
@@ -48,7 +48,7 @@
     </nav>
     <main
       id="main"
-      class="flex flex-col md:flex-row gap-4 justify-between flex-1 w-full p-8"
+      class="flex flex-col md:flex-row gap-8 md:gap-4 justify-between flex-1 w-full p-8"
     >
       <aside
         id="personal-info-container"
@@ -78,15 +78,16 @@
         <div id="project-2" class="border-3 flex flex-col rounded-md border-[#521214] shadow-xl ease-in-out hover:scale-101 duration-150">
           <div id="employdar-image-area" data-project="employdar" class="project-image-area relative hover:cursor-pointer hover:brightness-100 brightness-70">
             <a target="_blank" href="https://github.com/austindoq/employdar">
-              <img src="./images/proj-2-img-1.png" class="h-100 w-full border-b-2 ">                     
+              <img src="./images/proj-2-img-1.png" class="h-64 md:h-100 w-full border-b-2 ">                     
             </a>
             <button class="previousImageButton absolute top-1/2 left-2 -translate-y-1/2 bg-[#cccaca] text-[#521214] shadow-xl rounded-full hover:cursor-pointer hover:scale-105"><img src="./icons/chevron-left.svg" class="h-12 w-12"></button>
             <button class="nextImageButton absolute top-1/2 right-2 -translate-y-1/2 bg-[#cccaca] text-[#521214] shadow-xl rounded-full hover:cursor-pointer hover:scale-105"><img src="./icons/chevron-right.svg" class="h-12 w-12"></button>
           </div>
           <div id="project-text-area" class="p-2 flex flex-col gap-2 bg-[#cccaca]">
-            <div id="project-headers" class="flex items-center gap-2">
+            <div id="project-headers" class="flex flex-col md:flex-row items-center gap-2">
               <span id="project-title" class="tracking-wide text-3xl">Employdar</span>
-              <span id="partition" class="text-[#521214]"> | </span>
+              <span id="partition" class="text-[#521214] hidden md:inline-block"> | </span>
+              <div class="mobile-partition h-1 w-full md:hidden bg-[#521214]"></div>
               <span id="project-oneline" class="text-sm">Custom local MCP server that allows addition, updating, and natural language reasoning of job application data within a connected MongoDB collection as part of a multi-tool agentic workflow.</span>
             </div>
             <span id="project-details-container" class="border-t">
@@ -94,7 +95,7 @@
                 <div id="framework-icons-header">
                   <h1 class="text-md">Built with:</h1>
                 </div>
-                <div id="framework-icons" class="flex gap-2 items-center justify-evenly flex-1">
+                <div id="framework-icons" class="flex flex-wrap gap-2 items-center justify-evenly flex-1">
                   <img src="./icons/mcp.svg" class="h-10 w-10 border p-1 rounded-full">
                   <img src="./icons/claude.svg" class="h-10 w-10 border p-1 rounded-full">
                   <img src="./icons/mongodb.svg" class="h-10 w-10 border p-1 rounded-full">
@@ -107,15 +108,16 @@
         <div id="project-1" class="border-3 flex flex-col rounded-md border-[#521214] shadow-xl ease-in-out hover:scale-101 duration-150">
           <div id="anteautopro-image-area" data-project="anteautopro" class="project-image-area relative hover:cursor-pointer hover:brightness-100 brightness-70">
             <a target="_blank" href="https://github.com/austindoq/anteautopro" class="hover:cursor-pointer">
-              <img src="./images/proj-1-img-1.png" class="h-100 w-full border-b-2">
+              <img src="./images/proj-1-img-1.png" class="h-64 md:h-100 w-full border-b-2">
             </a>
             <button class="previousImageButton absolute top-1/2 left-2 -translate-y-1/2 bg-[#cccaca] text-[#521214] shadow-xl rounded-full hover:cursor-pointer hover:scale-105"><img src="./icons/chevron-left.svg" class="h-12 w-12"></button>
             <button class="nextImageButton absolute top-1/2 right-2 -translate-y-1/2 bg-[#cccaca] text-[#521214] shadow-xl rounded-full hover:cursor-pointer hover:scale-105"><img src="./icons/chevron-right.svg" class="h-12 w-12"></button>
           </div>
           <div id="project-text-area" class="p-2 flex flex-col gap-2 bg-[#cccaca]">
-            <div id="project-headers" class="flex items-center gap-2">
+            <div id="project-headers" class="flex flex-col md:flex-row items-center gap-2">
               <span id="project-title" class="tracking-wide text-3xl">Anteautopro.ca</span>
-              <span id="partition" class="text-[#521214]"> | </span>
+              <span id="partition" class="text-[#521214] hidden md:inline-block"> | </span>
+              <div class="mobile-partition h-1 w-full md:hidden bg-[#521214]"></div>
               <span id="project-oneline" class="text-sm">A bespoke, full stack, mobile-responsive web application and client portal for Ante Thompson; a Vancouver based automotive sales person.</span>
             </div>
             <span id="project-details-container" class="border-t">
@@ -123,7 +125,7 @@
                 <div id="framework-icons-header">
                   <h1 class="text-md">Built with:</h1>
                 </div>
-                <div id="framework-icons" class="flex gap-2 items-center justify-evenly flex-1">
+                <div id="framework-icons" class="flex flex-wrap gap-2 items-center justify-evenly flex-1">
                   <img src="./icons/html5.svg" class="h-10 w-10 border p-1 rounded-full">
                   <img src="./icons/tailwind.svg" class="h-10 w-10 border p-1 rounded-full">
                   <img src="./icons/javascript.svg" class="h-10 w-10 border p-1 rounded-full">

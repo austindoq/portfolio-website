@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     previousImageButtons: document.querySelectorAll(".previousImageButton"),
   };
 
+  //IMAGE SRC SETS
   const imageSets = {
     employdar: [
       "./images/proj-2-img-1.png",
@@ -16,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "./images/proj-1-img-3.png",
       "./images/proj-1-img-4.png",
       "./images/proj-1-img-5.png",
-      "./images/proj-1-img-6.jpg",
     ],
   };
 
+  //INDEX COUNTERS
   const imageIndexCounter = {
     employdar: 0,
     anteautopro: 0,
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         imageIndexCounter[projectCard.dataset.project] = 0;
       }
-      console.log(imageIndexCounter[projectCard.dataset.project]);
+
       currentImage.src =
         imageSet[imageIndexCounter[projectCard.dataset.project]];
     });
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         imageIndexCounter[projectCard.dataset.project] -= 1;
       }
-      console.log(imageIndexCounter[projectCard.dataset.project]);
+
       currentImage.src =
         imageSet[imageIndexCounter[projectCard.dataset.project]];
     });
